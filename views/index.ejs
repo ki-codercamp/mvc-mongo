@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MVC and MongoDb</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Backend Foundations</h1>
+        <p>Hands-On: MVC and MongoDb</p>
+      </div>
+    </div>
+    <div class="container">
+      <form class="form-group" action="/" method="post">
+        <input class="form-control" type="text" name="firstName" placeholder="First Name"><br>
+        <input class="form-control" type="text" name="lastName" placeholder="Last Name"><br>
+        <input class="form-control" type="text" name="title" placeholder="Title"><br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="container well">
+      <ul>
+        <% for (i=0; i < employees.length; i++) { %>
+          <li>
+            <span>First Name: <%= employees[i].firstName %></span><br>
+            <span>Last Name: <%= employees[i].lastName %></span> <br>
+            <span>Title: <%= employees[i].title %></span> <br>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+
+  </body>
+</html>
